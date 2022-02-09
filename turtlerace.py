@@ -15,7 +15,7 @@ tim.shape("turtle")
 
 chris = Turtle()
 chris.color ("green")
-chris.shape("turtle")
+chris.shape("classic")
 
 oz.penup()
 oz.goto(-160, 100)
