@@ -153,19 +153,29 @@
 # print(id(ozan.demerit))
 
 
-class Bikes():
+#Create a class for computer
+class Computer:
+    #initialize an atribute for brand, screen size & price
+    def __init__(self, brand, screen, price):
+        self.brand = brand
+        self.screen = screen
+        self.price = price
+
+#create a subclass for laptops
+class Laptop(Computer):
+    #create a method that reduces battery life everytime you turn on from 5
+    def on_lpt(self):
+        battery = 5
+        if battery >= 0:
+            battery -= 5
+            print("You still have some juice left coz' it's a Mac")
+        else:
+            print("You are out of juice. Must be an Intel")
     
-    def __init__(self, brand):
-        self.__brand = brand
+#create a subclass for desktops   
+class Desktop(Computer):
 
-    def set(self, value):
-        self.__brand = value
+    #create a method that increases electricty bill eveytime you turn on
 
-    def get(self):
-        return self.__brand
-
-x = Bikes()
-
-x.set("yamaha")
-
-print(x.get())
+    #----------FINISH WORKING CODE LATER---------
+    #----Create a method in class to override in laptop & desktop---------
