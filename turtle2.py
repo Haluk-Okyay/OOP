@@ -39,3 +39,4 @@ for movement in range(200):
     masafumi.forward(randint(1,10))
 
 
+x=input("Press any key to quit")
